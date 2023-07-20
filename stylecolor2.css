@@ -1,0 +1,34 @@
+html, body { padding: 0; margin: 0; }
+.image-grid div {
+  width: 25%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image01 { background-image: url('ig1.jpg'); }
+.image02 { background-image: url('ig2.jpg'); }
+.image03 { background-image: url('ig3.jpg'); }
+.image04 { background-image: url('ig4.jpg'); }
+.image05 { background-image: url('ig5.jpg'); }
+.image06 { background-image: url('ig6.jpg'); }
+.image07 { background-image: url('ig7.jpg'); }
+.image08 { background-image: url('ig8.jpg'); }
+.image09 { background-image: url('ig9.jpg'); }
+.image10 { background-image: url('ig10.jpg'); }
+.image11 { background-image: url('ig11.jpg'); }
+.image12 { background-image: url('ig12.jpg'); }
+
+@media screen and (max-width: 400px) {
+  .image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .image-grid div { width: 100%; }
+}
