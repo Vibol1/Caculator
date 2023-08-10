@@ -1,0 +1,15 @@
+:root {
+    --red: rgb(154, 255, 71);
+    --bgColor: rgb(196, 255, 209);
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--bgColor);
+  }
+  
+  img.framed {
+    box-shadow: -50px -50px 0 -40px var(--red), 50px 50px 0 -40px var(--red);
+  }
